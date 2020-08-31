@@ -1,0 +1,27 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" controllerName="Seleciona_dados.Dados_SQLView_ZGETV07.controller.Detail">
+
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="Busca de documentos" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+
+		<semantic:content><ObjectHeader id="objectHeader" title="Status : {docsta} ">
+			</ObjectHeader>
+			<ObjectListItem type="Active" title="{crenam}" numberUnit="{regio}" intro="Detalhes NF° - {docnum}" id="item0" number="{docnum}" fieldGroupIds="{doctyp}" numberState="{code}" tooltip="{docdat}{nfmonth}{nfyear}">
+			  <!--  <attributes>
+			        <ObjectAttribute text="{}" id="attribute6"/>
+			    </attributes>
+			    <firstStatus>
+			        <ObjectStatus text="            {}" id="status6"/>
+			    </firstStatus>
+			    <secondStatus>
+			        <ObjectStatus text="{}" id="status7"/>
+			    </secondStatus>-->
+			    </ObjectListItem>
+
+		</semantic:content>
+
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+
+	</semantic:DetailPage>
+
+</mvc:View>

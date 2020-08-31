@@ -1,0 +1,23 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZCDS_ABAP_FIORI07_CDS" xml:lang="pt" sap:schema-version="1">
+			<EntityType Name="ZCDS_ABAP_FIORI07Type" sap:content-version="1">
+				<Key><PropertyRef Name="docnum"/></Key><Property Name="docnum" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="NonNegative" sap:label="Nº documento"/><Property Name="nftype" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Ctg.nota fiscal"
+					sap:quickinfo="Ctg.de nota fiscal"/><Property Name="doctyp" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Tipo de documento"/><Property Name="direct" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Dir.movim.mercads."
+					sap:quickinfo="Direção do movimento de mercadorias"/><Property Name="docdat" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Data documento"
+					sap:quickinfo="Data do documento"/><Property Name="pstdat" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Data de lançamento"/><Property Name="credat" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Data de criação" sap:quickinfo="Criar data"/><Property Name="cretim" Type="Edm.Time" Precision="0" sap:label="Criado às:" sap:quickinfo="Hora da criação"/><Property Name="crenam" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Criado por"
+					sap:quickinfo="Nome do usuário"/><Property Name="docsta" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"/><Property Name="code" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Código status"
+					sap:quickinfo="Código de status oficial"/><Property Name="regio" Type="Edm.String" MaxLength="7" sap:display-format="UpperCase"/><Property Name="nfyear" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Ano do documento"
+					sap:quickinfo="Ano da data do documento"/><Property Name="nfmonth" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Mês documento"
+					sap:quickinfo="Mês da data do documento"/></EntityType>
+			<EntityContainer Name="ZCDS_ABAP_FIORI07_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZCDS_ABAP_FIORI07" EntityType="ZCDS_ABAP_FIORI07_CDS.ZCDS_ABAP_FIORI07Type" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZCDS_ABAP_FIORI07_CDS/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZCDS_ABAP_FIORI07_CDS/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

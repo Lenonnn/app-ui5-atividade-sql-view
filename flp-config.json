@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "Seleciona_dados.Dados_SQLView_ZGETV07.Dados_SQLView_ZGETV07",
+        "description": "App Busca dados Documentos",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#Dados_SQLView_ZGETV07-Display",
+        "navigationComponentName": "Seleciona_dados.Dados_SQLView_ZGETV07",
+        "intentSemanticObject": "Dados_SQLView_ZGETV07",
+        "intentAction": "Display",
+        "html5ApplicationName": "dadossqlviewzgetv07",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "110b5ee8-720c-4250-ba91-aebdebddd36a"
+        ],
+        "contentPackages": [
+            "644f160b-ce00-4f0c-892a-ee830f5a0ce9"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Filtro de Documentos",
+        "subtitle": "ZGETV07",
+        "searchKeywords": "Filtro de Documentos,ZGETV07",
+        "displayIconUrl": "sap-icon://along-stacked-chart",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
